@@ -12,12 +12,16 @@
 //// Colors
 $white: #ffffff;
 $black: #000000;
+$bodyText: #b3b3b3;
+$content: #1c1d1e;
 $lightGray: #C7C7C7;
 $darkGray: #111111;
+$blue: #22d7fd;
+$green: #00fa87;
 
 
 //// Fonts
-
+$font-oswald: 'Oswald', sans-serif;
 
 //// Mixins
 @mixin textIndent() {
@@ -146,4 +150,81 @@ textarea {
 //// Globals
 body {
     background: #000;
+    color: $bodyText;
+}
+
+table tr td, table tr th {
+    color: $bodyText;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $green;
+    font-family: $font-oswald;
+    text-transform: uppercase;
+}
+
+a {
+    color: $blue;
+}
+
+#Body {
+    .ContentColumn {
+        background: $content;
+        padding: 20px;
+        border-top: 4px solid $green;
+    }
+}
+
+#Head {
+    background: $black;
+    border-bottom: 7px solid $green;
+}
+
+.Row {
+    width: 1200px;
+}
+
+.Item {
+    &.Read {
+        background: $content;
+        opacity: 1;
+    }
+}
+
+table {
+    background: transparent;
+    border: 0px solid #ddd;
+    table-layout: auto;
+
+    thead {
+        background: $content;
+    }
+}
+
+.DataTable {
+    td {
+        padding: 16px 0;
+        color: $bodyText;
+        border-bottom: 0px solid #ddd;
+        border-bottom: 0px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+.HomepageTitle {
+    font-size: 20px;
+}
+
+.ItemDiscussion {
+    padding: 10px 9px 9px 9px;
+}
+
+.Discussion {
+    .PageTitle {
+        padding: 10px 5px 10px;
+
+        h1 {
+            font-size: 40px;
+            line-height: 1.2;
+        }
+    }
 }

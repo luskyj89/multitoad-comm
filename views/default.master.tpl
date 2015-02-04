@@ -2,6 +2,8 @@
 <html>
 <head>
   {asset name="Head"}
+
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 </head>
 <body id="{$BodyID}" class="{$BodyClass}">
    <div id="Frame">

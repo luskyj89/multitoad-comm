@@ -2,12 +2,9 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     minifycss = require('gulp-minify-css'),
     uglify = require('gulp-uglify'),
-    imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
-    notify = require('gulp-notify'),
-    cache = require('gulp-cache'),
-    del = require('del');
+    notify = require('gulp-notify');
 
 gulp.task('styles', function () {
     gulp.src('_uncompressed/scss/*.scss')
