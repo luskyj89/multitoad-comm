@@ -167,11 +167,17 @@ a {
     color: $blue;
 }
 
+.row
+{
+    max-width: 82.5rem;
+}
+
 #Body {
     .ContentColumn {
         background: $content;
         padding: 20px;
         border-top: 4px solid $green;
+        margin: 0;
     }
 }
 
@@ -181,7 +187,7 @@ a {
 }
 
 .Row {
-    width: 1200px;
+    width: auto;
 }
 
 .Item {
@@ -229,6 +235,13 @@ table {
     }
 }
 
+#Panel {
+    width: 100%;
+}
+
+#Content {
+    width: 100%;
+}
 
 ///// Discussions
 
