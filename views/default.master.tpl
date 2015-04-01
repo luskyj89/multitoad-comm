@@ -2,6 +2,7 @@
 <html>
 <head>
   {asset name="Head"}
+  <link href='http://fonts.googleapis.com/css?family=Arimo:400,700|Oswald:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body id="{$BodyID}" class="{$BodyClass}">
    <div id="Frame">
@@ -27,13 +28,13 @@
       <div id="Body">
          <div class="Row">
             <div class="row">
-                <div class="large-3 columns">
+                <div class="large-3 medium-3 columns">
                     <div class="Column PanelColumn" id="Panel">
                        {module name="MeModule"}
                        {asset name="Panel"}
                     </div>
                 </div>
-                <div class="large-9 columns">
+                <div class="large-9 medium-9 columns">
                     <div class="BreadcrumbsWrapper">{breadcrumbs}</div>
                     <div class="Column ContentColumn" id="Content">{asset name="Content"}</div>
                 </div>
