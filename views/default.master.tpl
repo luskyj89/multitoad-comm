@@ -14,12 +14,15 @@
                     <div class="SiteSearch">{searchbox}</div>
                     <ul class="SiteMenu">
                        <!-- {dashboard_link} -->
-                       {discussions_link}
-                       {activity_link}
+                       <!--{discussions_link} -->
+                       <!-- {activity_link} -->
                        <!-- {inbox_link} -->
-                       {custom_menu}
+                       <!-- {custom_menu} -->
                        <!-- {profile_link}
                        {signinout_link}  -->
+                       <li><a href="http://multitoad.com" target="_self">Features</a></li>
+                       <li class="community-active">Community</li>
+                       <li><a href="http://multitoad.com/streaming-network/" target="_self">Streamers</a></li>
                     </ul>
                 </div>
             </div>

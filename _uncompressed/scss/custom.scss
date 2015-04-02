@@ -194,6 +194,10 @@ a {
     }
 }
 
+body > #Frame > .Head {
+    padding: 0px 3px 3px;
+}
+
 #Head {
     margin-bottom: 20px;
     background: $black;
@@ -201,6 +205,23 @@ a {
     -webkit-box-shadow: 0px 10px 122px -27px rgba(0,250,135,1);
     -moz-box-shadow: 0px 10px 122px -27px rgba(0,250,135,1);
     box-shadow: 0px 10px 122px -27px rgba(0,250,135,1);
+
+    a {
+        font-weight: normal;
+        color: $blue;
+        transition: all .4s ease-out;
+
+        &:hover {
+            color: $green;
+            text-decoration: none;
+        }
+    }
+
+    .SiteSearch {
+        float: right;
+        margin-top: 12px;
+    }
+
 }
 
 .Row {
@@ -338,7 +359,7 @@ label {
     -webkit-box-shadow: none;
     border-color: rgba(34, 215, 253, 0.5);
     color: $blue;
-    transition: all .4s ease-out;
+    transition: all .5s ease-out;
 
     &:hover {
         border-color: $blue;
@@ -368,33 +389,41 @@ label {
 }
 
 input[type=text], input[type=password], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=email], input[type=number], input[type=tel], input[type=time], input[type=url], input[type=color], input[type=search], textarea {
-  -webkit-appearance: none;
-  border-radius: 0;
-  background-color: #000;
-  font-family: inherit;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #2F2F2F;
-  box-shadow: none;
-  color: rgba(255,255,255,.75);
-  display: block;
-  font-size: .875rem;
-  margin: 0 0 1rem;
-  padding: .5rem;
-  height: 2.3125rem;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  transition: box-shadow .45s,border-color .45s ease-in-out;
+    -webkit-appearance: none;
+    border-radius: 0;
+    background-color: #000;
+    font-family: inherit;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #2F2F2F;
+    box-shadow: none;
+    color: rgba(255,255,255,.75);
+    display: block;
+    font-size: .875rem;
+    margin: 0 0 1rem;
+    padding: .5rem;
+    height: 2.3125rem;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: box-shadow .45s,border-color .45s ease-in-out;
 }
 
 input[type=text]:focus, input[type=password]:focus, input[type=date]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=month]:focus, input[type=week]:focus, input[type=email]:focus, input[type=number]:focus, input[type=tel]:focus, input[type=time]:focus, input[type=url]:focus, input[type=color]:focus, input[type=search]:focus, textarea:focus {
-  box-shadow: 0 0 5px #999;
-  background: #000;
-  border-color: #999;
-  outline: 0;
-  color: $bodyText;
+    box-shadow: 0 0 5px #999;
+    background: #000;
+    border-color: #999;
+    outline: 0;
+    color: $bodyText;
+}
+
+table tfoot tr td, table tfoot tr th, table thead tr td, table thead tr th {
+    color: $green;
+}
+
+table.PreferenceGroup tbody tr:hover td {
+  background: #002715 !important;
 }
 
 .MenuItems {
@@ -427,6 +456,60 @@ input[type=text]:focus, input[type=password]:focus, input[type=date]:focus, inpu
     line-height: 18px;
 }
 
+.FlyoutMenu {
+    width: 300px;
+    background: $black;
+    color: $bodyText;
+    border: 3px solid #00fa87;
+
+    a {
+        color: $blue;
+
+        &:hover {
+            color: $blue;
+            opacity: .8;
+        }
+
+    }
+
+}
+
+.Info {
+    background: #000000;
+}
+
+.SiteMenu {
+
+    a {
+       padding: 6px;
+       font-family: $font-oswald;
+       font-size: 17px;
+       text-transform: uppercase;
+   }
+
+   li {
+       display: inline-block;
+       padding: 16px 0px;
+       margin: 0 5px;
+       transition: all .5s ease-out;
+
+       &:hover {
+           border-top: 7px solid $green;
+       }
+
+   }
+
+    .community-active {
+        font-family: $font-oswald;
+        font-size: 17px;
+        color: $green;
+        border-top: 7px solid $green;
+        display: inline-block;
+        padding: 16px 0px;
+        text-transform: uppercase;
+    }
+
+}
 
 ///// YAGA
 
