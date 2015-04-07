@@ -14,6 +14,7 @@ $white: #ffffff;
 $black: #000000;
 $bodyText: #b3b3b3;
 $content: #1c1d1e;
+$body: #151515;
 $lightGray: #C7C7C7;
 $darkGray: #111111;
 $blue: #22d7fd;
@@ -153,7 +154,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 //// Globals
 body {
-    background: #000 url(http://multitoad.com/community/themes/multitoad/design/images/bg.jpg) repeat;
+    background: $body /*url(http://multitoad.com/community/themes/multitoad/design/images/bg.jpg) repeat*/;
     font-family: $font-arimo;
     color: $bodyText;
 }
@@ -191,6 +192,9 @@ a {
         padding: 20px;
         border-top: 4px solid $green;
         margin: 0;
+        -webkit-box-shadow: 0 0px 12px -9px #000000;
+        -moz-box-shadow: 0 0px 12px -9px #000000;
+        box-shadow: 0 0px 12px -9px #000000;
     }
 }
 
@@ -200,11 +204,11 @@ body > #Frame > .Head {
 
 #Head {
     margin-bottom: 20px;
-    background: $black;
+    background: $body;
     border-bottom: 7px solid $green;
-    -webkit-box-shadow: 0px 10px 122px -27px rgba(0,250,135,1);
-    -moz-box-shadow: 0px 10px 122px -27px rgba(0,250,135,1);
-    box-shadow: 0px 10px 122px -27px rgba(0,250,135,1);
+    -webkit-box-shadow: 0px 10px 122px -31px rgba(0,250,135,1);
+    -moz-box-shadow: 0px 10px 122px -31px rgba(0,250,135,1);
+    box-shadow: 0px 10px 122px -31px rgba(0,250,135,1);
 
     a {
         font-weight: normal;
@@ -220,6 +224,10 @@ body > #Frame > .Head {
     .SiteSearch {
         float: right;
         margin-top: 12px;
+
+        @media only screen and (max-width: 40em) {
+            display: none;
+        }
     }
 
 }
@@ -262,6 +270,8 @@ table {
     padding: 10px 9px 9px 9px;
 
     .Message {
+        padding-bottom: 30px;
+        border-bottom: 2px solid rgba(23, 23, 23, 1);
         font-size: 15px;
     }
 }
@@ -279,6 +289,24 @@ table {
 
 #Panel {
     width: 100%;
+
+    li {
+
+        a {
+            font-family: $font-oswald;
+            font-weight: normal;
+            font-size: 14px;
+            color: $bodyText;
+            text-transform: uppercase;
+            transition: all .4s ease-out;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+
+    }
+
 }
 
 #Content {
@@ -383,9 +411,12 @@ label {
     border: 5px solid $blue;
     border-color: rgba(34, 215, 253, 0.5);
     text-transform: uppercase;
-    -webkit-box-shadow: inset 0px 0px 36px -8px rgba(34,215,253,1);
-    -moz-box-shadow: inset 0px 0px 36px -8px rgba(34,215,253,1);
-    box-shadow: inset 0px 0px 36px -8px rgba(34,215,253,1);
+
+    &:hover {
+        -webkit-box-shadow: inset 0px 0px 36px -8px rgba(34,215,253,1);
+        -moz-box-shadow: inset 0px 0px 36px -8px rgba(34,215,253,1);
+        box-shadow: inset 0px 0px 36px -8px rgba(34,215,253,1);
+    }
 }
 
 input[type=text], input[type=password], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=email], input[type=number], input[type=tel], input[type=time], input[type=url], input[type=color], input[type=search], textarea {
@@ -497,6 +528,12 @@ table.PreferenceGroup tbody tr:hover td {
            border-top: 7px solid $green;
        }
 
+       @media only screen and (max-width: 40em) {
+           &:hover {
+               border-top: 0px solid $green;
+           }
+       }
+
    }
 
     .community-active {
@@ -507,6 +544,10 @@ table.PreferenceGroup tbody tr:hover td {
         display: inline-block;
         padding: 16px 0px;
         text-transform: uppercase;
+
+        @media only screen and (max-width: 810px) {
+            border-top: 0px solid $green;
+        }
     }
 
 }
@@ -538,6 +579,16 @@ a.TextColor, a .TextColor {
 
 ///// Main Page
 
+.masthead {
+    display: block;
+    max-width: 486px;
+    margin: 0 auto;
+
+    @media all and (max-width: 695px) {
+        max-width: 100%;
+    }
+}
+
 .TagCloud {
 
     li {
@@ -548,7 +599,10 @@ a.TextColor, a .TextColor {
         border: solid 1px #CCCCCC;
         border-color: rgba(200, 186, 186, 0.27);
         margin: 2px 0;
-        font-size: 12px;
+
+        a {
+            font-size: 12px!important;
+        }
     }
 
 }
@@ -587,7 +641,7 @@ table {
 
     .Item {
         margin: 0;
-        padding: 30px 0px;
+        padding: 0px 0 80px;
         border: 0px solid #ddd;
         border: 0px solid rgba(0, 0, 0, 0.1);
         border-bottom-width: 1px;
@@ -595,13 +649,33 @@ table {
     }
 }
 
-.ItemComment {
-    border-top: 4px solid $green!important;
-}
-
-
-.CommentHeader {
-    border-bottom: 1px solid rgb(61, 61, 61);
+.DiscussionHeader {
+    border-bottom: 1px solid #131313;
+    border-top: 4px solid rgba(0, 250, 135, 0.17)!important;
     padding-bottom: 18px;
     margin-bottom: 20px;
+    padding: 10px;
+    background: rgb(23, 23, 23);
+}
+
+.ItemComment {
+    border-top: 4px solid rgba(0, 250, 135, 0.17)!important;
+
+    .Message {
+        padding-bottom: 30px;
+        border-bottom: 2px solid rgba(23, 23, 23, 1);
+        font-size: 15px;
+    }
+}
+
+.Item-BodyWrap {
+    padding-left: 10px;
+}
+
+.CommentHeader {
+    border-bottom: 1px solid #131313;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgb(23, 23, 23);
 }
