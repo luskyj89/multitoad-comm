@@ -157,6 +157,7 @@ body {
     background: $body /*url(http://multitoad.com/community/themes/multitoad/design/images/bg.jpg) repeat*/;
     font-family: $font-arimo;
     color: $bodyText;
+    -webkit-font-smoothing: antialiased;
 }
 
 table tr td, table tr th {
@@ -187,6 +188,8 @@ a {
 }
 
 #Body {
+    margin-top: 90px;
+
     .ContentColumn {
         background: $content;
         padding: 20px;
@@ -203,15 +206,22 @@ body > #Frame > .Head {
 }
 
 #Head {
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
     margin-bottom: 20px;
-    background: $body;
+    background: rgba(21, 21, 21, 0.93);
     border-bottom: 7px solid $green;
-    -webkit-box-shadow: 0px 10px 122px -33px rgba(0,250,135,1);
-    -moz-box-shadow: 0px 10px 122px -33px rgba(0,250,135,1);
-    box-shadow: 0px 10px 122px -33px rgba(0,250,135,1);
+    -webkit-box-shadow: 0px 10px 70px -32px rgba(0,250,135,1);
+    -moz-box-shadow: 0px 10px 70px -32px rgba(0,250,135,1);
+    box-shadow: 0px 10px 70px -32px rgba(0,250,135,1);
     transition: all .7s ease-out;
 
     &:hover {
+        background: rgba(21, 21, 21, 1);
         -webkit-box-shadow: 0px 10px 122px -28px rgba(0,250,135,1);
         -moz-box-shadow: 0px 10px 122px -28px rgba(0,250,135,1);
         box-shadow: 0px 10px 122px -28px rgba(0,250,135,1);
@@ -230,11 +240,63 @@ body > #Frame > .Head {
 
     .SiteSearch {
         float: right;
-        margin-top: 12px;
+        margin-top: 9px;
 
         @media only screen and (max-width: 40em) {
             display: none;
         }
+
+        .Button {
+            top: 10px;
+            right: 9px;
+        }
+
+        .InputBox {
+            padding: 5px 25px 5px 10px;
+            background: transparent;
+            color: transparent;
+            transition: all .4s ease-out;
+
+            &:hover, &:active, &:focus {
+                background: $black;
+                color: $bodyText;
+
+                &::-webkit-input-placeholder {
+                   color: $bodyText;
+                }
+
+                &:-moz-placeholder { /* Firefox 18- */
+                   color: $bodyText;
+                }
+
+                &::-moz-placeholder {  /* Firefox 19+ */
+                   color: $bodyText;
+                }
+
+                &:-ms-input-placeholder {
+                   color: $bodyText;
+                }
+
+            }
+
+            &::-webkit-input-placeholder {
+               color: transparent;
+            }
+
+            &:-moz-placeholder { /* Firefox 18- */
+               color: transparent;
+            }
+
+            &::-moz-placeholder {  /* Firefox 19+ */
+               color: transparent;
+            }
+
+            &:-ms-input-placeholder {
+               color: transparent;
+            }
+
+        }
+
     }
 
 }
@@ -322,11 +384,11 @@ table {
 
 input, select, textarea {
     color: $bodyText;
-    background: $black;
+    background: $body;
 
     &:focus {
         color: $bodyText;
-        background: $black;
+        background: $body;
     }
 
 }
@@ -343,22 +405,13 @@ select {
 
 ul.token-input-list {
     border: 1px solid #2F2F2F !important;
-    background-color: $black !important;
+    background-color: $body !important;
 }
 
 li.token-input-token {
   background-color: #000 !important;
   color: #00fa87 !important;
   border: 2px solid rgba(0, 250, 135, 0.41) !important;
-}
-
-.SiteSearch {
-
-    .Button {
-        top: 10px;
-        right: 9px;
-    }
-
 }
 
 .Tag {
@@ -390,8 +443,13 @@ label {
 }
 
 .cleditorMain {
-    //border: 1px solid #2F2F2F;
-    //background-color: $black;
+    border: 1px solid #2F2F2F;
+    background-color: $body;
+
+    body {
+        color: $bodyText !important;
+    }
+
 }
 
 .Button {
@@ -450,7 +508,7 @@ label {
 input[type=text], input[type=password], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=email], input[type=number], input[type=tel], input[type=time], input[type=url], input[type=color], input[type=search], textarea {
     -webkit-appearance: none;
     border-radius: 0;
-    background-color: #000;
+    background-color: $body;
     font-family: inherit;
     border-style: solid;
     border-width: 1px;
@@ -471,14 +529,14 @@ input[type=text], input[type=password], input[type=date], input[type=datetime], 
 
 input[type=text]:focus, input[type=password]:focus, input[type=date]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=month]:focus, input[type=week]:focus, input[type=email]:focus, input[type=number]:focus, input[type=tel]:focus, input[type=time]:focus, input[type=url]:focus, input[type=color]:focus, input[type=search]:focus, textarea:focus {
     box-shadow: 0 0 5px #999;
-    background: #000;
+    background: $body;
     border-color: #999;
     outline: 0;
     color: $bodyText;
 }
 
 fieldset[disabled] input[type=text], fieldset[disabled] input[type=password], fieldset[disabled] input[type=date], fieldset[disabled] input[type=datetime], fieldset[disabled] input[type=datetime-local], fieldset[disabled] input[type=month], fieldset[disabled] input[type=week], fieldset[disabled] input[type=email], fieldset[disabled] input[type=number], fieldset[disabled] input[type=tel], fieldset[disabled] input[type=time], fieldset[disabled] input[type=url], fieldset[disabled] input[type=color], fieldset[disabled] input[type=search], fieldset[disabled] textarea, input[type=text]:disabled, input[type=text][disabled], input[type=text][readonly], input[type=password]:disabled, input[type=password][disabled], input[type=password][readonly], input[type=date]:disabled, input[type=date][disabled], input[type=date][readonly], input[type=datetime]:disabled, input[type=datetime][disabled], input[type=datetime][readonly], input[type=datetime-local]:disabled, input[type=datetime-local][disabled], input[type=datetime-local][readonly], input[type=month]:disabled, input[type=month][disabled], input[type=month][readonly], input[type=week]:disabled, input[type=week][disabled], input[type=week][readonly], input[type=email]:disabled, input[type=email][disabled], input[type=email][readonly], input[type=number]:disabled, input[type=number][disabled], input[type=number][readonly], input[type=tel]:disabled, input[type=tel][disabled], input[type=tel][readonly], input[type=time]:disabled, input[type=time][disabled], input[type=time][readonly], input[type=url]:disabled, input[type=url][disabled], input[type=url][readonly], input[type=color]:disabled, input[type=color][disabled], input[type=color][readonly], input[type=search]:disabled, input[type=search][disabled], input[type=search][readonly], textarea:disabled, textarea[disabled], textarea[readonly] {
-  background-color: #000;
+  background-color: $body;
   border-color: #2D2D2d;
   color: #2A2A2A;
   cursor: default;
@@ -546,6 +604,10 @@ table.PreferenceGroup tbody tr:hover td {
 
 .SiteMenu {
 
+    @media all and (max-width: 810px) {
+        display: none;
+    }
+
     a {
        padding: 6px;
        font-family: $font-oswald;
@@ -555,7 +617,7 @@ table.PreferenceGroup tbody tr:hover td {
 
    li {
        display: inline-block;
-       padding: 16px 0px;
+       padding: 10px 0px;
        margin: 0 5px;
        transition: all .5s ease-out;
 
@@ -577,7 +639,7 @@ table.PreferenceGroup tbody tr:hover td {
         color: $green;
         border-top: 7px solid $green;
         display: inline-block;
-        padding: 16px 0px;
+        padding: 10px 0px;
         text-transform: uppercase;
 
         @media only screen and (max-width: 810px) {
@@ -648,8 +710,13 @@ a.TextColor, a .TextColor {
         display: inline-block;
         width: 260px;
         background: url(http://multitoad.com/wp-content/uploads/2013/12/valenti-logo.png);
-        background-position: 0px -12px;
+        background-position: 0px -16px;
         text-indent: -9999px;
+
+        @media all and (max-width: 810px) {
+            margin-top: 12px;
+        }
+
     }
 
 }
@@ -691,6 +758,14 @@ table {
     margin-bottom: 20px;
     padding: 10px;
     background: rgb(23, 23, 23);
+}
+
+.DiscussionForm {
+
+    label {
+        color: $bodyText;
+    }
+
 }
 
 .ItemComment {
@@ -735,4 +810,15 @@ li.DP_ResultOption {
 
 ol.DP_ResultQuestions {
     margin-left: 0;
+}
+
+
+/// Other Media Queries
+
+@media all and (max-width: 40em) {
+
+    .FirstUser {
+        display: none;
+    }
+
 }
