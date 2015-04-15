@@ -187,6 +187,10 @@ a {
     max-width: 82.5rem;
 }
 
+blockquote.Quote, blockQuote.UserQuote {
+    border-left: 4px solid #00fa87;
+}
+
 #Body {
     margin-top: 90px;
 
@@ -222,9 +226,9 @@ body > #Frame > .Head {
 
     &:hover {
         background: rgba(21, 21, 21, 1);
-        -webkit-box-shadow: 0px 10px 122px -28px rgba(0,250,135,1);
-        -moz-box-shadow: 0px 10px 122px -28px rgba(0,250,135,1);
-        box-shadow: 0px 10px 122px -28px rgba(0,250,135,1);
+        -webkit-box-shadow: 0px 10px 122px -20px rgba(0,250,135,1);
+        -moz-box-shadow: 0px 10px 122px -20px rgba(0,250,135,1);
+        box-shadow: 0px 10px 122px -20px rgba(0,250,135,1);
     }
 
     a {
@@ -329,6 +333,12 @@ table {
         border-bottom: 0px solid #ddd;
         border-bottom: 0px solid rgba(0, 0, 0, 0.1);
     }
+
+    .Title {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
 }
 
 .HomepageTitle {
@@ -418,6 +428,11 @@ li.token-input-token {
     background: #00fa87;
     color: #000000;
     font-weight: bold;
+}
+
+.Tag-Closed {
+    background: black;
+    color: gray;
 }
 
 div.Popup {
@@ -642,11 +657,21 @@ table.PreferenceGroup tbody tr:hover td {
         padding: 10px 0px;
         text-transform: uppercase;
 
+        a {
+            color: $green !important;
+        }
+
         @media only screen and (max-width: 810px) {
             border-top: 0px solid $green;
         }
     }
 
+}
+
+.AlertMessage {
+    background: #6441a5;
+    border: 1px solid #6441a5;
+    color: $white;
 }
 
 ///// YAGA

@@ -10,7 +10,7 @@
          <div class="Row">
             <div class="row">
                 <div class="large-12 columns">
-                    <strong class="SiteTitle"><a href="{link path="/"}">{logo}</a></strong>
+                    <strong class="SiteTitle"><a href="http://multitoad.com">{logo}</a></strong>
                     <div class="SiteSearch">{searchbox}</div>
                     <ul class="SiteMenu">
                        <!-- {dashboard_link} -->
@@ -21,7 +21,7 @@
                        <!-- {profile_link}
                        {signinout_link}  -->
                        <li><a href="http://multitoad.com" target="_self">Features</a></li>
-                       <li class="community-active">Community</li>
+                       <li class="community-active"><a href="{link path="/"}" title="Community">Community</a></li>
                        <li><a href="http://multitoad.com/streaming-network/" target="_self">Streamers</a></li>
                     </ul>
                 </div>
