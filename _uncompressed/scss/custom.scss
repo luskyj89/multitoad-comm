@@ -815,6 +815,21 @@ table {
     background: rgb(23, 23, 23);
 }
 
+.RoleTitle {
+    font-family: $font-oswald;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: $green;
+    border-right: 3px solid rgba(0, 250, 135, 0.28);
+    padding-right: 5px;
+}
+
+.Rank {
+    font-family: $font-oswald;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-left: 0;
+}
 
 /// Polls
 
@@ -825,7 +840,7 @@ table {
 }
 
 .DP_Bar {
-    background-color: #00fa87 !important;
+    background-color: $green !important;
     padding: 3px !important;
 }
 
