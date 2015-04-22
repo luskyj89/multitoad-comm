@@ -22,7 +22,7 @@
                        {signinout_link}  -->
                        <li><a href="http://multitoad.com" target="_self">Features</a></li>
                        <li class="community-active"><a href="{link path="/"}" title="Community">Community</a></li>
-                       <li><a href="http://multitoad.com/streaming-network/" target="_self">Streamers</a></li>
+                       <li><a href="http://multitoad.com/category/videos/" target="_self">Videos</a></li>
                     </ul>
                 </div>
             </div>
