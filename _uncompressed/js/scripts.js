@@ -18,6 +18,11 @@ function init() {
     //     closeNav();
     // });
 
+    $(".MeButton").click(function() {
+        console.log("click");
+        $(this).find(".Alert").css("opacity", 0);
+    });
+
 }
 
 

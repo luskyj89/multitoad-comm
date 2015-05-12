@@ -390,9 +390,17 @@ table {
         font-size: 15px;
     }
 
-    &:hover {
-        background-color: #181818;
+}
+
+.DiscussionsTable {
+
+    .ItemDiscussion {
+
+        &:hover {
+            background-color: #181818;
+        }
     }
+
 }
 
 .Discussion {
@@ -744,7 +752,7 @@ table.PreferenceGroup tbody tr:hover td {
 }
 
 .HasNew {
-  background: #F0F0F0;
+  background: #E0D83C;
 }
 
 ///// YAGA
@@ -916,6 +924,9 @@ table {
     margin-left: 0;
 }
 
+.UserSignature {
+  border-top: 0!important;
+}
 
 /// Polls
 

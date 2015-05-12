@@ -58,5 +58,6 @@
       </div>
    </div>
    {event name="AfterBody"}
+   <script src="/community/themes/multitoad/design/js/scripts.min.js" type="text/javascript"></script>
 </body>
 </html>
