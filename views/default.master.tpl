@@ -40,6 +40,7 @@
                 <div class="large-9 medium-9 columns">
                     <img class="masthead" src="http://multitoad.com/community/themes/multitoad/design/images/masthead.png" alt="Let's Beat It Together!" />
                     <div class="BreadcrumbsWrapper">{breadcrumbs}</div>
+                    <figure class="toads"></figure>
                     <div class="Column ContentColumn" id="Content">{asset name="Content"}</div>
                 </div>
             </div>
