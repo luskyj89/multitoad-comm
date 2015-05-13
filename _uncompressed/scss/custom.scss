@@ -329,6 +329,11 @@ body > #Frame > .Head {
     &.Read {
         background: $content;
         opacity: 1;
+
+        .Title {
+            font-weight: 700;
+            color: $bodyText;
+        }
     }
     &.Checked {
         background: $body;
@@ -369,6 +374,13 @@ table {
     .Title {
         font-size: 15px;
         font-weight: bold;
+        text-shadow: rgba(0, 0, 0, 0.4) 2px 2px 2px;
+        transition: all .4s ease-out;
+
+        &:hover {
+            text-shadow: rgba(34, 215, 253, 0.92) 0px 0px 19px;
+            color: #B5F2FF;
+        }
     }
 
 }
@@ -752,7 +764,7 @@ table.PreferenceGroup tbody tr:hover td {
 }
 
 .HasNew {
-  background: #E0D83C;
+  //background: #E0D83C;
 }
 
 ///// YAGA
