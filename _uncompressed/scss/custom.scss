@@ -652,7 +652,7 @@ table.PreferenceGroup tbody tr:hover td {
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
-    background: #000;
+    background: $body;
     padding: 5px 0;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
@@ -662,6 +662,15 @@ table.PreferenceGroup tbody tr:hover td {
         &:hover {
             background-color: #002715 !important;
         }
+    }
+
+    ul {
+        margin: 10px;
+        font-size: 13px;
+    }
+
+    hr {
+        border-bottom: 1px solid #454545;
     }
 
 }
@@ -677,7 +686,7 @@ table.PreferenceGroup tbody tr:hover td {
 
 .FlyoutMenu {
     width: 300px;
-    background: $black;
+    background: $body;
     color: $bodyText;
     border: 3px solid #00fa87;
 
@@ -691,6 +700,14 @@ table.PreferenceGroup tbody tr:hover td {
 
     }
 
+}
+
+.ItemContent {
+    font-size: 13px;
+}
+
+.PopList {
+    margin: 10px;
 }
 
 .Info {
@@ -858,6 +875,7 @@ a.TextColor, a .TextColor {
     .Flyout {
         left: initial;
         right: -4px;
+        margin-top: 2px;
 
         &:before, &:after {
             left: initial;
