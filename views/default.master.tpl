@@ -11,6 +11,7 @@
             <div class="row">
                 <div class="large-12 columns">
                     <strong class="SiteTitle"><a href="http://multitoad.com">{logo}</a></strong>
+                    {module name="MeModule"}
                     <div class="SiteSearch">{searchbox}</div>
                     <ul class="SiteMenu">
                        <!-- {dashboard_link} -->
@@ -24,6 +25,7 @@
                        <li class="community-active"><a href="{link path="/"}" title="Community">Community</a></li>
                        <li><a href="http://multitoad.com/category/videos/" target="_self">Videos</a></li>
                     </ul>
+
                 </div>
             </div>
          </div>
@@ -33,7 +35,7 @@
             <div class="row">
                 <div class="large-3 medium-3 columns">
                     <div class="Column PanelColumn" id="Panel">
-                       {module name="MeModule"}
+
                        {asset name="Panel"}
                     </div>
                 </div>

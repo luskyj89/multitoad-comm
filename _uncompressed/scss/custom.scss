@@ -261,6 +261,7 @@ body > #Frame > .Head {
     .SiteSearch {
         float: right;
         margin-top: 9px;
+        margin-right: 10px;
 
         @media only screen and (max-width: 40em) {
             display: none;
@@ -332,7 +333,7 @@ body > #Frame > .Head {
 
         .Title {
             font-weight: 700;
-            color: $bodyText;
+            color: #D7D7D7;
         }
     }
     &.Checked {
@@ -392,7 +393,7 @@ table {
 }
 
 .ItemDiscussion {
-    padding: 10px 9px 9px 9px;
+    padding: 10px 0;
     border-bottom: 1px solid rgb(21, 21, 21);
     transition: all .4s ease-out;
 
@@ -417,12 +418,16 @@ table {
 
 .Discussion {
     .PageTitle {
-        padding: 10px 5px 10px;
+        padding: 10px 0px 10px;
 
         h1 {
             font-size: 40px;
             line-height: 1.2;
         }
+    }
+
+    .CommentHeading {
+        margin: 10px 9px;
     }
 }
 
@@ -693,8 +698,10 @@ table.PreferenceGroup tbody tr:hover td {
 }
 
 .SiteMenu {
+    display: block;
+    float: left;
 
-    @media all and (max-width: 810px) {
+    @media all and (max-width: 940px) {
         display: none;
     }
 
@@ -823,6 +830,8 @@ a.TextColor, a .TextColor {
 }
 
 .SiteTitle {
+    float: left;
+    margin-top: 11px;
 
     a {
         display: inline-block;
@@ -835,6 +844,32 @@ a.TextColor, a .TextColor {
             margin-top: 12px;
         }
 
+    }
+
+}
+
+.MeBox {
+    display: inline-block;
+    float: right;
+    width: 160px;
+    height: 60px;
+    margin: 8px 0;
+
+    .Flyout {
+        left: initial;
+        right: -4px;
+
+        &:before, &:after {
+            left: initial;
+            right: 9px;
+        }
+    }
+
+    .Username {
+        position: relative;
+        left: 6px;
+        top: 1px;
+        font-family: $font-oswald;
     }
 
 }
