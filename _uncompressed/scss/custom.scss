@@ -993,6 +993,25 @@ table {
   border-top: 0!important;
 }
 
+.Comment, .DiscussionHeader, .CommentHeader {
+
+    .Author {
+
+        .Username {
+            display: block;
+            line-height: 20px;
+            font-family: $font-oswald;
+        }
+
+        .ProfilePhoto {
+            height: 60px!important;
+            width: 60px!important;
+        }
+
+    }
+
+}
+
 /// Polls
 
 .DP_AnswerForm, .DP_ResultsForm {

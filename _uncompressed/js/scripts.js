@@ -23,10 +23,10 @@ function init() {
         $(this).find(".Alert").css("opacity", 0);
     });
 
-    if( $( "a[href='/community/profile/2/YOGZULA']" ).html() == "YOGZULA") {
-        $( "a[href='/community/profile/2/YOGZULA']" ).html("FART");
-        $( "a[href='/community/profile/YOGZULA']").html("FART");
-    }
+    // if( $( "a[href='/community/profile/2/YOGZULA']" ).html() == "YOGZULA") {
+    //     $( "a[href='/community/profile/2/YOGZULA']" ).html("FART");
+    //     $( "a[href='/community/profile/YOGZULA']").html("FART");
+    // }
 
 }
 
