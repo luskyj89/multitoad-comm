@@ -27,7 +27,7 @@ function init() {
     //     $( "a[href='/community/profile/2/YOGZULA']" ).html("FART");
     //     $( "a[href='/community/profile/YOGZULA']").html("FART");
     // }
-
+    
 }
 
 
