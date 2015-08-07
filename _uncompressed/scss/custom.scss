@@ -407,6 +407,14 @@ table {
         padding-bottom: 30px;
         border-bottom: 2px solid rgba(23, 23, 23, 1);
         font-size: 15px;
+
+        li {
+            margin: 0;
+        }
+
+        ul, ol {
+            margin: 10px 0 10px 3em;
+        }
     }
 
 }
