@@ -25,6 +25,7 @@
                        <li class="community-active"><a href="{link path="/"}" title="Community">Community</a></li>
                        <li><a href="http://multitoad.com/category/videos/" target="_self">Videos</a></li>
                        <li><a href="http://multitoad.com/category/toadcast/" target="_self">ToadCast</a></li>
+                       <li><a href="http://multitoad.com/mtsc-statistics/" target="_self">MTSC Stats</a></li>
                     </ul>
 
                 </div>
