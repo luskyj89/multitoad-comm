@@ -12,7 +12,7 @@
                 <div class="large-12 columns">
                     <strong class="SiteTitle"><a href="http://multitoad.com">{logo}</a></strong>
                     {module name="MeModule"}
-                    <a class="toad-search" href="search" title="Search">Search</a>
+                    <a class="toad-search" href="http://multitoad.com/community/search" title="Search">Search</a>
                     <a id="hamburger-btn" href="#" title="Menu">Menu</a>
                     <!-- <div class="SiteSearch">{searchbox}</div> -->
                     <ul class="SiteMenu">
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="large-9 medium-9 columns">
-                    <img class="masthead" src="http://multitoad.com/community/themes/multitoad/design/images/masthead.png" alt="Let's Beat It Together!" />
+                    <img class="masthead" src="http://multitoad.com/community/themes/multitoad/design/images/masthead-aug-2015.png" alt="Let's Beat It Together!" />
                     <div class="BreadcrumbsWrapper">{breadcrumbs}</div>
                     <figure class="toads"></figure>
                     <div class="Column ContentColumn" id="Content">{asset name="Content"}</div>
