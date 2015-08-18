@@ -188,6 +188,10 @@ h2, h3 {
 
 a {
     color: $blue;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .row
@@ -469,6 +473,26 @@ table {
 #Panel {
     width: 100%;
 
+    .MeBox {
+        display: none;
+        float: none;
+
+        @media all and (max-width: 640px) {
+            display: block;
+        }
+
+        .Flyout {
+            right: initial;
+            left: -4px;
+            margin-top: 2px;
+
+            &:before, &:after {
+                right: initial;
+                left: 9px;
+            }
+        }
+    }
+
     li {
 
         a {
@@ -742,7 +766,7 @@ table.PreferenceGroup tbody tr:hover td {
     display: block;
     float: left;
 
-    @media all and (max-width: 1023px) {
+    @media all and (max-width: 1090px) {
         display: none;
     }
 
@@ -790,6 +814,90 @@ table.PreferenceGroup tbody tr:hover td {
         }
     }
 
+}
+
+///// Mobile/Tablet Nav
+
+#hamburger {
+    display: none;
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: $content;
+    border-bottom: 7px solid #22d7fd;
+    -webkit-box-shadow: 0 10px 70px -32px $blue;
+    -moz-box-shadow: 0 10px 70px -32px $blue;
+    box-shadow: 0 10px 70px -32px $blue;
+    
+    // @media all and (max-width: 1090px) {
+    //     display: block;
+    // }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        font-family: $font-oswald;
+        text-transform: uppercase;
+        font-size: 22px;
+        text-align: center;
+        line-height: 30px;
+
+        &:hover {
+            background-color: $body;
+        }
+    }
+}
+
+#hamburger-btn {
+    display: none;
+    float: left;
+    width: 21px;
+    height: 21px;
+    margin-top: 20px;
+    margin-left: 13px;
+    background: url(images/icon-hamburger.png) no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+    transition: all .4s ease-out;
+
+    @media all and (max-width: 1090px) {
+        display: block;
+    }
+
+    &.active {
+        background: url(images/icon-exit.png) no-repeat;
+        background-size: 100%;
+    }
+
+    &:hover {
+        opacity: .7;
+    }
+
+}
+
+.toad-search {
+    display: block;
+    float: right;
+    width: 21px;
+    height: 21px;
+    margin-top: 18px;
+    margin-right: 10px;
+    background: url(images/icon-search.png) no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+    transition: all .4s ease-out;
+
+    &:hover {
+        opacity: .7;
+    }
 }
 
 .AlertMessage {
@@ -900,13 +1008,10 @@ a.TextColor, a .TextColor {
     a {
         display: inline-block;
         width: 260px;
-        background: url(http://multitoad.com/wp-content/uploads/2013/12/valenti-logo.png);
+        background: url(images/logo-horizontal.png);
         background-position: 0px -16px;
+        background-size: 100%;
         text-indent: -9999px;
-
-        @media all and (max-width: 810px) {
-            margin-top: 12px;
-        }
 
     }
 
@@ -918,6 +1023,10 @@ a.TextColor, a .TextColor {
     width: 160px;
     height: 60px;
     margin: 8px 0;
+
+    @media all and (max-width: 640px) {
+        display: none;
+    }
 
     .Flyout {
         left: initial;

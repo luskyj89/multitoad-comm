@@ -12,7 +12,9 @@
                 <div class="large-12 columns">
                     <strong class="SiteTitle"><a href="http://multitoad.com">{logo}</a></strong>
                     {module name="MeModule"}
-                    <div class="SiteSearch">{searchbox}</div>
+                    <a class="toad-search" href="search" title="Search">Search</a>
+                    <a id="hamburger-btn" href="#" title="Menu">Menu</a>
+                    <!-- <div class="SiteSearch">{searchbox}</div> -->
                     <ul class="SiteMenu">
                        <!-- {dashboard_link} -->
                        <!--{discussions_link} -->
@@ -26,7 +28,19 @@
                        <li><a href="http://multitoad.com/category/videos/" target="_self">Videos</a></li>
                        <li><a href="http://multitoad.com/category/toadcast/" target="_self">ToadCast</a></li>
                        <li><a href="http://multitoad.com/mtsc-statistics/" target="_self">MTSC Stats</a></li>
+                       <!-- <li><a id="mtsn-button" href="#" target="_self">Streaming Network</a></li> -->
                     </ul>
+
+                    <div id="hamburger">
+                        <ul>
+                            <li><a href="http://multitoad.com" target="_self">Features</a></li>
+                            <li class="community-active"><a href="{link path="/"}" title="Community">Community</a></li>
+                            <li><a href="http://multitoad.com/category/videos/" target="_self">Videos</a></li>
+                            <li><a href="http://multitoad.com/category/toadcast/" target="_self">ToadCast</a></li>
+                            <li><a href="http://multitoad.com/mtsc-statistics/" target="_self">MTSC Stats</a></li>
+                            <!-- <li><a id="mtsn-button" href="#" target="_self">Streaming Network</a></li> -->
+                        </ul>
+                    </div>
 
                 </div>
             </div>
@@ -37,7 +51,7 @@
             <div class="row">
                 <div class="large-3 medium-3 columns">
                     <div class="Column PanelColumn" id="Panel">
-
+                       {module name="MeModule"}
                        {asset name="Panel"}
                     </div>
                 </div>
@@ -62,6 +76,6 @@
       </div>
    </div>
    {event name="AfterBody"}
-   <script src="/community/themes/multitoad/design/js/scripts.min.js" type="text/javascript"></script>
+   <script src="http://multitoad.com/community/themes/multitoad/design/js/scripts.min.js" type="text/javascript"></script>
 </body>
 </html>
