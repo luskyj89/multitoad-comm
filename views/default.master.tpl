@@ -26,7 +26,7 @@
                        <li><a href="http://multitoad.com" target="_self">Features</a></li>
                        <li class="community-active"><a href="{link path="/"}" title="Community">Community</a></li>
                        <li><a href="http://multitoad.com/category/videos/" target="_self">Videos</a></li>
-                       <li><a href="http://multitoad.com/category/toadcast/" target="_self">ToadCast</a></li>
+                       <li><a href="http://multitoad.com/category/podcast/" target="_self">Podcast</a></li>
                        <li><a href="http://multitoad.com/mtsc-statistics/" target="_self">MTSC Stats</a></li>
                        <!-- <li><a id="mtsn-button" href="#" target="_self">Streaming Network</a></li> -->
                     </ul>
@@ -36,7 +36,7 @@
                             <li><a href="http://multitoad.com" target="_self">Features</a></li>
                             <li class="community-active"><a href="{link path="/"}" title="Community">Community</a></li>
                             <li><a href="http://multitoad.com/category/videos/" target="_self">Videos</a></li>
-                            <li><a href="http://multitoad.com/category/toadcast/" target="_self">ToadCast</a></li>
+                            <li><a href="http://multitoad.com/category/podcast/" target="_self">Podcast</a></li>
                             <li><a href="http://multitoad.com/mtsc-statistics/" target="_self">MTSC Stats</a></li>
                             <!-- <li><a id="mtsn-button" href="#" target="_self">Streaming Network</a></li> -->
                         </ul>
