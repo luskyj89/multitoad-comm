@@ -829,7 +829,7 @@ table.PreferenceGroup tbody tr:hover td {
     -webkit-box-shadow: 0 10px 70px -32px $blue;
     -moz-box-shadow: 0 10px 70px -32px $blue;
     box-shadow: 0 10px 70px -32px $blue;
-    
+
     // @media all and (max-width: 1090px) {
     //     display: block;
     // }
@@ -1211,6 +1211,10 @@ ol.DP_ResultQuestions {
     min-height: 62px!important;
     font-size: 2.3em;
     z-index: 998;
+
+    &.BottomLeft {
+        bottom: 75px!important;
+    }
 }
 
 
