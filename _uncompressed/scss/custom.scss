@@ -1232,6 +1232,30 @@ ol.DP_ResultQuestions {
 
 }
 
+/// Spoilers
+
+.UserSpoiler {
+    background-color: rgb(23, 23, 23) !important;
+    border: 3px solid #133D2A;
+
+    .SpoilerTitle {
+
+        input {
+            background: #1C1D1E !important;
+            border: 2px solid #22d7fd !important;
+            color: #00FA87 !important;
+        }
+
+    }
+
+    .SpoilerText {
+        padding-left: 9px !important;
+        margin: 8px 0px !important;
+        border-left: 3px solid #133D2A !important;
+    }
+
+}
+
 
 /// Other Media Queries
 
